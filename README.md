@@ -1,6 +1,6 @@
-# Serpent 3D — Next.js Scaffold
+# Serpent 3D — Next.js Game
 
-This workspace is now a minimal TypeScript-only Next.js app that is ready for Vercel deployment.
+This workspace is now a TypeScript-only Next.js app containing the restored Serpent 3D game and is ready for Vercel deployment.
 
 How to run:
 
@@ -16,11 +16,11 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 to see the app home page.
+Open http://localhost:3000 to play the game.
 
 Notes:
-- The app uses the Next.js App Router with TypeScript only.
-- Environment variables live in `.env.local`.
-- Middleware at `middleware.ts` refreshes Supabase sessions.
+- The game logic and Three.js engine are in [app/snakeGame.ts](app/snakeGame.ts).
+- The UI shell lives in [app/page.tsx](app/page.tsx).
+- The project uses the Next.js App Router with TypeScript only.
 
-If you want the game integrated into a React page (no redirect), I can convert `snake3d.html` into a React component.
+If you want, I can also extract the game loop into smaller engine modules or add score persistence back later.
