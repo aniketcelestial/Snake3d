@@ -45,16 +45,16 @@ const LEVELS: Level[] = [
   {
     id: 1,
     name: 'Grasslands',
-    gridSize: 96,
-    speed: 625,
+    gridSize: 120,
+    speed: 500,
     winScore: 100,
     bgColor: 0x0a1a0a,
     fogColor: 0x0a1a0a,
     fogNear: 8,
-    fogFar: 140,
+    fogFar: 180,
     fruitTypes: ['apple', 'gem', 'star'],
-    rockCount: 10,
-    treeCount: 8,
+    rockCount: 12,
+    treeCount: 10,
   },
 ]
 
